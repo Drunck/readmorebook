@@ -99,7 +99,7 @@ func main() {
 }
 
 func openDB(cfg config) (*pgxpool.Pool, error) {
-	config, err := pgxpool.ParseConfig(os.Getenv("GREENLIGHT_DB_DSN"))
+	config, err := pgxpool.ParseConfig(os.Getenv("READMOREBOOK_DB_DSN"))
 	if err != nil {
 		return nil, err
 	}
