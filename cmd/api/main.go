@@ -69,7 +69,7 @@ func main() {
 	flag.IntVar(&cfg.smtp.port, "smtp-port", 587, "SMTP port")
 	flag.StringVar(&cfg.smtp.username, "smtp-username", smtpUsername, "SMTP username")
 	flag.StringVar(&cfg.smtp.password, "smtp-password", os.Getenv("SMTP-PASSWORD"), "SMTP password")
-	flag.StringVar(&cfg.smtp.sender, "smtp-sender", fmt.Sprintf("Greenlight <%s>", smtpUsername), "SMTP sender")
+	flag.StringVar(&cfg.smtp.sender, "smtp-sender", fmt.Sprintf("ReadMoreBook <%s>", smtpUsername), "SMTP sender")
 
 	flag.Parse()
 
